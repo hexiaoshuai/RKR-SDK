@@ -1,0 +1,14 @@
+cc_binary {
+    name: "rockchip_udc_detector",
+    system_ext_specific: true,
+    srcs: [
+        "main.cpp",
+    ],
+    init_rc: [
+        "init.rockchip_udc_detector.rc",
+    ],
+    shared_libs: [
+        "libbase",
+        "liblog",
+    ],
+}

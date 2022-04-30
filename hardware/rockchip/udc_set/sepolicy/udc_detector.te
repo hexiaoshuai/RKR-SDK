@@ -1,0 +1,7 @@
+type vendor-udc-detector, domain, coredomain;
+type vendor-udc-detector_exec, exec_type, system_file_type, file_type;
+
+init_daemon_domain(vendor-udc-detector)
+
+allow vendor-udc-detector sysfs_udc:dir r_dir_perms;
+set_prop(vendor-udc-detector, usb_control_prop)

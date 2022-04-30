@@ -1,0 +1,9 @@
+service rockchip_udc_detector /system_ext/bin/rockchip_udc_detector
+    class core
+    user root
+    group system
+    oneshot
+    disabled
+
+on early-fs
+    start rockchip_udc_detector
